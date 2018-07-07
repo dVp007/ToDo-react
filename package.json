@@ -4,14 +4,17 @@
   "description": "This is a react based project to manage the inventory",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --content-base src --inline --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Dharmil Parekh",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
     "babel-loader": "^7.1.4",
+    "express": "^4.16.3",
     "loader": "^2.1.1",
     "mobx": "^5.0.2",
     "mobx-react": "^5.2.3",
