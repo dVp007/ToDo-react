@@ -44,7 +44,6 @@ class TodoList extends Component{
 
 	editItem(key,text){
 		var editedItem = this.state.items.filter(function (item) {
-			 var editedText = prompt("enter the edited task");
 			 if(editedText.trim() == ""){return item;}
 	    	 if(item.key == key){
 	    	 	item.text = editedText

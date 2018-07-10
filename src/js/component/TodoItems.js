@@ -23,7 +23,7 @@ class TodoItems extends Component{
 		return (
 			<div className="box">
 				<li className = {"list "+items.checked} key={items.key}>
-					<span onClick={() => this.edit(items.key,items.text)}>{items.text}</span>
+					<span onClick={() => this.edit(items.key,items.text)} editable>{items.text}</span>
 					<i className="material-icons round check " onClick={() => this.checked(items.key)}><span className="check">check</span></i>
 					<i className="material-icons round delete" onClick={() => this.delete(items.key)}><span className="delete">delete</span></i>
 				</li>
